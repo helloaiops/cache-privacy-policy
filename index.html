@@ -4,147 +4,247 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy — A6: Expense Manager & Wallet</title>
+  <meta name="description" content="Privacy Policy for Cache: Expense &amp; Money Tracker — smart expense tracking with optional notification-based auto-capture." />
+  <title>Privacy Policy — Cache: Expense &amp; Money Tracker</title>
   <style>
+    :root {
+      --bg: #f7f9fb;
+      --card: #ffffff;
+      --text: #191c1e;
+      --muted: #45474c;
+      --border: #e0e3e5;
+      --accent: #091426;
+      --link: #006c49;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      max-width: 680px;
-      margin: 48px auto;
-      padding: 0 24px 64px;
-      color: #1a1a1a;
+      margin: 0;
+      padding: 32px 20px 64px;
+      background: var(--bg);
+      color: var(--text);
       line-height: 1.75;
       font-size: 16px;
     }
 
+    .wrap {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .logo {
+      width: 88px;
+      height: 88px;
+      border-radius: 22px;
+      box-shadow: 0 8px 24px rgba(9, 20, 38, 0.12);
+      margin-bottom: 16px;
+    }
+
     h1 {
-      font-size: 1.6rem;
-      margin-bottom: 4px;
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin: 0 0 6px;
+      letter-spacing: -0.02em;
+      color: var(--accent);
+    }
+
+    .app-name {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 8px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px 24px;
+      box-shadow: 0 2px 8px rgba(30, 41, 59, 0.06);
     }
 
     h2 {
       font-size: 1.05rem;
-      margin-top: 36px;
-      margin-bottom: 8px;
+      font-weight: 700;
+      margin: 28px 0 10px;
+      color: var(--accent);
+    }
+
+    h2:first-of-type {
+      margin-top: 0;
     }
 
     p,
     li {
-      color: #374151;
+      color: var(--muted);
+      margin: 0 0 12px;
     }
 
     ul {
       padding-left: 20px;
+      margin: 0 0 12px;
     }
 
     li {
-      margin-bottom: 4px;
+      margin-bottom: 6px;
     }
 
-    .meta {
-      color: #6b7280;
-      font-size: 0.9rem;
-      margin-bottom: 32px;
+    strong {
+      color: var(--text);
     }
 
     hr {
       border: none;
-      border-top: 1px solid #e5e7eb;
-      margin: 32px 0;
+      border-top: 1px solid var(--border);
+      margin: 24px 0;
     }
 
     a {
-      color: #4f46e5;
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .notice {
+      background: #f2f4f6;
+      border-radius: 12px;
+      padding: 14px 16px;
+      font-size: 0.92rem;
+      margin-bottom: 20px;
+      color: var(--muted);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 24px;
+      font-size: 0.85rem;
+      color: var(--muted);
     }
   </style>
 </head>
 
 <body>
+  <div class="wrap">
+    <header class="header">
+      <img class="logo" src="icon.png" width="88" height="88" alt="Cache app icon" />
+      <h1>Privacy Policy</h1>
+      <p class="app-name">Cache: Expense &amp; Money Tracker</p>
+      <p class="meta">Developed by Pritesh Koshiya &nbsp;·&nbsp; Last updated: May 2026</p>
+    </header>
 
-  <h1>Privacy Policy</h1>
-  <p class="meta">A6: Expense Manager &amp; Wallet &nbsp;·&nbsp; Last updated: May 21, 2026</p>
+    <main class="card">
+      <p>
+        This Privacy Policy describes how <strong>Cache: Expense &amp; Money Tracker</strong> ("Cache" or "the App"), developed by
+        <strong>Pritesh Koshiya</strong>, collects, uses, and protects your information.
+      </p>
 
-  <p>
-    This Privacy Policy describes how A6: Expense Manager &amp; Wallet ("the App"), developed by
-    <strong>Pritesh Koshiya</strong>, handles your information.
-  </p>
+      <div class="notice">
+        <strong>Summary:</strong> Your data stays on your device. Sign-in is optional. We do not sell your data.
+        Notification access is optional and used only to help detect transactions on your phone.
+      </div>
 
-  <hr>
+      <h2>1. Information We Collect</h2>
 
-  <h2>1. Information We Collect</h2>
+      <p>
+        <strong>Expense and category data</strong><br />
+        When you add transactions or categories, they are stored locally on your device using SQLite.
+        If you sign in with Google, this data may be synced to Firebase Firestore under your account.
+      </p>
 
-  <p><strong>Expense and category data</strong><br>
-    When you add expenses or categories, they are stored locally on your device using SQLite.
-    If you sign in with Google, this data is also synced to Firebase Firestore under your account.
-  </p>
+      <p>
+        <strong>Google account information</strong><br />
+        If you choose to sign in, we collect your Google account name and email address via
+        Google Sign-In and Firebase Authentication. Sign-in is optional — the App works fully without it.
+      </p>
 
-  <p><strong>Google account information</strong><br>
-    If you choose to sign in, we collect your Google account name and email address via
-    Google Sign-In and Firebase Authentication. Sign-in is optional — the App works fully without it.
-  </p>
+      <p>
+        <strong>Banking and payment notifications (Android)</strong><br />
+        If you enable <strong>Notification Access</strong>, the App can read the text shown in your
+        notification shade from supported apps (for example, bank or payment alerts). This may include
+        SMS app notifications <em>only if</em> your SMS app displays message content as a notification.
+        <strong>Cache does not read your SMS inbox or message history</strong> and does not request SMS
+        permissions. Notification content is processed on-device to detect transactions. Raw notification
+        text is not sold or shared with third parties. If you are signed in, parsed fields (such as amount,
+        bank name, and merchant) may be stored in your Firebase account as part of your transaction data.
+      </p>
 
-  <p><strong>Banking notification content</strong><br>
-    The App optionally reads Android notifications from banking apps to auto-detect and create expense entries.
-    This is processed entirely on-device. The raw notification text is never transmitted to any server.
-    Only the parsed fields (amount, bank name, account) are synced to Firebase if you are signed in.
-  </p>
+      <h2>2. How We Use Your Information</h2>
+      <ul>
+        <li>Transaction and category data is used solely to provide expense tracking, budgets, and analytics in the App.</li>
+        <li>Your Google name and email are used to identify your account and associate synced data in Firebase.</li>
+        <li>Notification content is used only to suggest or create transaction entries on your device.</li>
+      </ul>
 
-  <h2>2. How We Use Your Information</h2>
-  <ul>
-    <li>Expense and category data is used solely to provide the core functionality of the App.</li>
-    <li>Your Google name and email are used to identify your account and associate your synced data in Firebase.</li>
-    <li>Notification content is used only to automatically create expense entries on your device.</li>
-  </ul>
+      <h2>3. Data Storage</h2>
+      <p>
+        All data is stored locally on your device. If you sign in with Google, your expense and
+        category data is additionally stored in <strong>Firebase Firestore</strong> (Google Cloud),
+        scoped to your user account (Firebase UID) and not accessible to other users.
+      </p>
+      <p>
+        Firebase is governed by
+        <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>.
+      </p>
 
-  <h2>3. Data Storage</h2>
-  <p>
-    All data is stored locally on your device. If you sign in with Google, your expense and
-    category data is additionally stored in <strong>Firebase Firestore</strong>, which is a
-    Google Cloud service. Data is scoped to your user account (identified by your Firebase UID)
-    and is not accessible to other users.
-  </p>
-  <p>
-    Firebase is governed by <a href="https://firebase.google.com/support/privacy" target="_blank">Google's Privacy
-      Policy</a>.
-  </p>
+      <h2>4. Data Sharing</h2>
+      <p>
+        We do not sell, rent, or share your personal information with third parties for marketing.
+        Your data is stored on your device and, if you sign in, in your Firebase account.
+        We do not use advertising SDKs. If we add analytics in the future, we will update this policy
+        and provide clear notice in the App.
+      </p>
 
-  <h2>4. Data Sharing</h2>
-  <p>
-    We do not sell, rent, or share your personal information with any third parties.
-    Your data is only stored on your device and in your Firebase account.
-    No analytics, advertising, or crash-reporting SDKs are used in this App.
-  </p>
+      <h2>5. Your Data Controls</h2>
+      <ul>
+        <li><strong>Export:</strong> Export your data from Settings in the App (CSV or JSON, depending on version).</li>
+        <li><strong>Sign out:</strong> Signing out stops further cloud sync. Local data remains on your device until you delete it.</li>
+        <li><strong>Revoke notification access:</strong> Android Settings → Special app access → Notification access → Cache (or turn off in App Settings).</li>
+        <li><strong>Delete local data:</strong> Use Delete data / clear options in App Settings.</li>
+        <li><strong>Delete cloud data:</strong> Request account and cloud data deletion by emailing us at the address below.</li>
+      </ul>
 
-  <h2>5. Your Data Controls</h2>
-  <ul>
-    <li><strong>Export:</strong> You can export all your expense data as a JSON file from Settings → Export History.
-    </li>
-    <li><strong>Sign out:</strong> Signing out from Settings stops further cloud sync. Your local data remains on your
-      device.</li>
-    <li><strong>Revoke notification access:</strong> Android Settings → Special App Access → Notification Access → A6.
-    </li>
-    <li><strong>Delete cloud data:</strong> To request deletion of your data from Firebase, contact us at the email
-      below.</li>
-  </ul>
+      <h2>6. Children's Privacy</h2>
+      <p>
+        This App is not directed at children under 13. We do not knowingly collect personal
+        information from children.
+      </p>
 
-  <h2>6. Children's Privacy</h2>
-  <p>
-    This App is not directed at children under the age of 13. We do not knowingly collect
-    personal information from children.
-  </p>
+      <h2>7. Changes to This Policy</h2>
+      <p>
+        We may update this policy from time to time. Changes will be posted on this page with an
+        updated date. Continued use of the App after changes are posted constitutes acceptance.
+      </p>
 
-  <h2>7. Changes to This Policy</h2>
-  <p>
-    We may update this policy from time to time. Changes will be posted on this page with
-    an updated date. Continued use of the App after changes are posted constitutes acceptance.
-  </p>
+      <h2>8. Contact</h2>
+      <p>
+        Questions about this Privacy Policy or data deletion requests:<br />
+        <strong>Pritesh Koshiya</strong><br />
+        <a href="mailto:priteshkoshiya21@gmail.com">priteshkoshiya21@gmail.com</a>
+      </p>
+    </main>
 
-  <h2>8. Contact</h2>
-  <p>
-    If you have questions about this Privacy Policy or want to request data deletion, contact:<br>
-    <strong>Pritesh Koshiya</strong><br>
-    <a href="mailto:priteshkoshiya21@gmail.com">priteshkoshiya21@gmail.com</a>
-  </p>
-
+    <footer>
+      &copy; 2026 Cache: Expense &amp; Money Tracker
+    </footer>
+  </div>
 </body>
 
 </html>
