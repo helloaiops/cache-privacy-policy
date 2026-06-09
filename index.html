@@ -147,7 +147,7 @@
       <img class="logo" src="icon.png" width="88" height="88" alt="Cache app icon" />
       <h1>Privacy Policy</h1>
       <p class="app-name">Cache: Expense &amp; Money Tracker</p>
-      <p class="meta">Developed by Pritesh Koshiya &nbsp;·&nbsp; Last updated: May 2026</p>
+      <p class="meta">Developed by Pritesh Koshiya &nbsp;·&nbsp; Last updated: June 2026</p>
     </header>
 
     <main class="card">
@@ -181,7 +181,8 @@
         notification shade from supported apps (for example, bank or payment alerts). This may include
         SMS app notifications <em>only if</em> your SMS app displays message content as a notification.
         <strong>Cache does not read your SMS inbox or message history</strong> and does not request SMS
-        permissions. Notification content is processed on-device to detect transactions. Raw notification
+        permissions. Notification content is processed on-device to detect transactions. This listener
+        operates in the background to capture transactions even when the App is not open. Raw notification
         text is not sold or shared with third parties. If you are signed in, parsed fields (such as amount,
         bank name, and merchant) may be stored in your Firebase account as part of your transaction data.
       </p>
@@ -208,6 +209,8 @@
       <p>
         We do not sell, rent, or share your personal information with third parties for marketing.
         Your data is stored on your device and, if you sign in, in your Firebase account.
+        We use <strong>Sentry</strong> (<a href="https://sentry.io/privacy/" target="_blank" rel="noopener noreferrer">sentry.io</a>)
+        for crash reporting — Sentry may collect device info and error traces to help us fix bugs.
         We do not use advertising SDKs. If we add analytics in the future, we will update this policy
         and provide clear notice in the App.
       </p>
@@ -218,7 +221,7 @@
         <li><strong>Sign out:</strong> Signing out stops further cloud sync. Local data remains on your device until you delete it.</li>
         <li><strong>Revoke notification access:</strong> Android Settings → Special app access → Notification access → Cache (or turn off in App Settings).</li>
         <li><strong>Delete local data:</strong> Use Delete data / clear options in App Settings.</li>
-        <li><strong>Delete cloud data:</strong> Request account and cloud data deletion by emailing us at the address below.</li>
+        <li><strong>Delete cloud data:</strong> Use "Delete account &amp; cloud data" in App Settings — this will delete all associated cloud data (expenses, categories, and account info from Firebase). You may also request deletion by emailing us at the address below.</li>
       </ul>
 
       <h2>6. Children's Privacy</h2>
